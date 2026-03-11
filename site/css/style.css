@@ -1,0 +1,110 @@
+/* Основной фон и шрифты */
+body {
+    background-color: #ffcccc; /* Пастельно-красный цвет */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Стили заголовка */
+header {
+    text-align: center;
+    color: white;
+    /*text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;*/
+        margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Контейнер для меню и контента */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+/* Кнопки меню слева */
+.sidebar {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-right: 30px;
+}
+
+.nav-btn {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .nav-btn:hover {
+        background-color: #f0f0f0;
+        transform: translateX(5px);
+    }
+
+    .nav-btn.active {
+        background-color: #eee;
+        border-color: #000;
+    }
+
+/* Белый блок контента */
+.content-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.section-title {
+    text-align: center;
+    border-bottom: 2px solid #ffcccc;
+    padding-bottom: 10px;
+}
+
+/* Стили для изображений */
+.main-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.side-img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.description {
+    line-height: 1.6;
+    font-size: 18px;
+    overflow: hidden; /* Чтобы текст не "выпадал" за фото */
+}
